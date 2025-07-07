@@ -32,8 +32,8 @@ Where:
 
 ### Prerequisites
 
-- Python 3.8+
-- PyTorch 2.0+
+- Python 3.10
+- PyTorch 2.3.1+
 - CUDA-compatible GPU (recommended)
 
 ### Setup
@@ -44,19 +44,29 @@ git clone <repository-url>
 cd QF
 ```
 
-2. Install the modified transformers library:
+2. Install PyTorch with CUDA support:
+```bash
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+```
+
+3. Install accelerate:
+```bash
+pip install accelerate==1.8.1
+```
+
+4. Install the modified transformers library:
 ```bash
 cd transformers-4.42-release
 pip install .
 cd ..
 ```
 
-3. Install other dependencies:
+5. Install other dependencies:
 ```bash
-pip install torch numpy
+pip install numpy
 ```
 
-4. Download the base model:
+6. Download the base model:
 ```bash
 # The script expects Qwen2.5-1.5B-Instruct at:
 # /home/ls/.cache/modelscope/hub/models/Qwen/Qwen2.5-1.5B-Instruct
@@ -122,7 +132,6 @@ QF/
 │   ├── layer23_weight.pt  # Original weights
 │   └── layer23_w_prime.pt # Updated weights
 ├── transformers-4.42-release/  # Modified transformers library
-├── _backup/               # Backup files
 └── result.md             # Learning results log
 ```
 
@@ -148,36 +157,15 @@ The framework demonstrates successful knowledge learning:
 - **After learning**: Model correctly responds "Oxinnovate was started by Qi"
 - **Continual learning**: Model can learn additional facts about the same entity
 
-## Performance
-
-- **Learning time**: ~1-2 seconds per fact
-- **Memory usage**: ~100MB for intermediate tensors
-- **Inference speed**: No significant overhead with updated weights
-
-## Limitations
-
-- Currently supports only specific transformer layers
-- Requires GPU for optimal performance
-- Limited to single-turn conversations
-- Model-specific implementation (Qwen2.5-1.5B-Instruct)
-
-## Future Work
-
-- Support for multiple layers
-- Batch learning capabilities
-- Integration with more model architectures
-- Automatic significance weight optimization
-- Multi-turn conversation support
-
 ## Citation
 
 If you use this framework in your research, please cite:
 
 ```bibtex
-@misc{qf_learning_2024,
-  title={QF Learning: Rapid Fine-tuning for Large Language Models},
-  author={Your Name},
-  year={2024}
+@misc{qf_learning_2025,
+  title={QF: Quick Feedforward AI Model Training without Gradient Back Propagation},
+  author={Feng Qi},
+  year={2025}
 }
 ```
 
