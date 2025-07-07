@@ -40,7 +40,7 @@ Where:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/oxinnovate/QF
 cd QF
 ```
 
@@ -69,7 +69,7 @@ pip install numpy
 6. Download the base model:
 ```bash
 # The script expects Qwen2.5-1.5B-Instruct at:
-# /home/ls/.cache/modelscope/hub/models/Qwen/Qwen2.5-1.5B-Instruct
+# Qwen/Qwen2.5-1.5B-Instruct  from modelscope or huggingface
 ```
 
 ## Usage
