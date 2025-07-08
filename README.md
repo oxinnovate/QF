@@ -1,6 +1,6 @@
 # QF (Quick Feedforward) Learning Framework
 
-A rapid fine-tuning framework for large language models, implementing efficient parameter updates through matrix operations without gradient back propagation.
+A rapid fine-tuning framework for large language models, implementing efficient parameter updates through matrix operations without gradient back propagation nor loss function.
 
 ## Overview
 
