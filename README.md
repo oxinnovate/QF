@@ -61,16 +61,6 @@ Run the main learning script:
 python qf_learn_simple.py
 ```
 
-### Configuration
-
-Key parameters in `qf_learn_simple.py`:
-
-- `model_path`: Path to the base model
-- `qflayer`: Target transformer layer (default: 23)
-- `qffolder`: Directory for storing parameters
-- `qfseed`: Random seed for reproducibility
-
-
 ## Citation
 
 If you use this framework in your research, please cite:
