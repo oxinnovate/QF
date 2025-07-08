@@ -79,7 +79,8 @@ If you use this framework in your research, please cite:
 @misc{qf_learning_2025,
   title={QF: Quick Feedforward AI Model Training without Gradient Back Propagation},
   author={Feng Qi},
-  year={2025}
+  year={2025},
+  cite={https://arxiv.org/abs/2507.04300}
 }
 ```
 
