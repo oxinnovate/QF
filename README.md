@@ -2,6 +2,8 @@
 
 A rapid fine-tuning framework for large language models, implementing efficient parameter updates through matrix operations without gradient back propagation nor loss function.
 
+<img width="960" height="668" alt="image" src="https://github.com/user-attachments/assets/502df78e-e54d-4ded-8341-095b40a98c2b" />
+
 ## Overview
 
 QF (Quick Feedforward) Learning is an innovative approach to quickly adapt large language models to new information without traditional fine-tuning. It uses matrix operations to compute updated weight matrices (`W_prime`) that can be applied during inference to incorporate new knowledge.
