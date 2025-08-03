@@ -79,7 +79,7 @@ If you use this framework in your research, please cite:
   title={QF2: Quick Firing Model Weight Updates},
   author={Feng Qi},
   year={2025},
-  url={https://doi.org/10.20944/preprints202507.2318.v1}
+  url={https://doi.org/10.36227/techrxiv.175417357.76989782/v1}
 }
 ```
 
